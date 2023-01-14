@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./YTindex.css">
+    <title>Video</title>
+    <style>
+       
+        /* #main{
+            display: flex;
+            flex-direction:row ;
+            height: 400px;
+            margin-top: 10px;
+        } */
+        #navbar{
+            height: 58px;
+            border-style: groove;
+        }
+        #video_details{
+            width: 100%;
+            height: 450px;
+            /* height: 100%; */
+            border-style: groove;
+        }
+        #recommendation{
+            width: 30%;
+            border-style: groove;
+        }
+        #user{
+        width: 80%;
+        height: 50px;
+        }
+        #user:hover{
+        cursor: pointer;
+        }
+    </style>
+</head>
+<body onload="playvideo()">
+    <div id="navbar">
+        <div id="nav">
+            <img src="https://freepngimg.com/download/youtube/77758-logo-live-computer-youtube-icons-png-download-free.png" alt="Youtube">
+            <div id="search">
+                <input type="text" id="query" placeholder="search">
+                <button onclick="searchVideo()">Search</button>
+            </div>
+            <div>
+                <img src="https://img.icons8.com/fluency/2x/username.png" alt="" id="user">
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div id="navtwo">
+        <button style="border-radius: 30px; width: 47px;">All</button>
+        <button>Javascript</button>
+        <button>Music</button>
+        <button>Dance</button>
+        <button>Trailer</button>
+        <button>Gamming</button>
+        <button>Game Show</button>
+        <button>Tranding</button>
+        <button>Comedy</button>
+        <button style="border-radius: 30px; width: 47px;" onclick="live()">Live</button>
+    </div>
+
+    <div id="main">
+        <div id="video_details">
+
+            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/5WEqS7JQLRo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        </div>
+        
+    </div>
+    
+</body>
+<script src="./video.js"></script>
+</html>
